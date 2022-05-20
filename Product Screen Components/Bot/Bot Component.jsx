@@ -6,11 +6,11 @@ const BotComponent = () => {
   return (
     <View style={styles.container}>
       <View style={{ flexDirection: "row" }}>
-        <InfoColumn />
-        <InfoColumn />
-        <InfoColumn />
-        <InfoColumn />
-        <InfoColumn />
+        <InfoColumn time={"3:00"}/>
+        <InfoColumn time={"6:00"}/>
+        <InfoColumn time={"9:00"}/>
+        <InfoColumn time={"12:00"}/>
+        <InfoColumn time={"15:00"}/>
       </View>
     </View>
   );

@@ -28,7 +28,7 @@ const MidComponent = () => {
   useEffect(() => {
     getWeatherData();
   }, []);
-
+  console.log(data)
   return (
     <View>
       <View style={styles.rowContainer}>
@@ -47,7 +47,7 @@ const MidComponent = () => {
 
           <View style={{ flexDirection: "row", justifyContent: "center" }}>
             <Ionicons name="leaf" size={30} color={"white"}></Ionicons>
-            <Text style={styles.midText}>75%</Text>
+            <Text style={styles.midText}>{Math.floor(data.grnd_level/10)}%</Text>
           </View>
         </View>
       </View>
