@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
       },
       image:{
           marginTop: 31,
-          width:18,
+          width:39,
           height: 18,
       },
       time:{
@@ -29,16 +29,14 @@ const styles = StyleSheet.create({
         fontWeight:"bold",
         color:"white",
         marginTop:86,
-        bottom: 30
+        bottom: 30,
       },
       tempColumn:{
           width:6,
-          height:20,
+          height:24,
           backgroundColor:"white",
           borderRadius:3,
-          bottom: 20
-          
-          
+          bottom: 20,
       }
   
 });

@@ -12,7 +12,6 @@ const MidComponent = () => {
   const longitude = "139";
   const weather_api_url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${weather_api_key}&units=metric`;
 
-  console.log(weather_api_url);
   const getWeatherData = async () => {
     try {
       const response = await fetch(weather_api_url);
@@ -28,7 +27,6 @@ const MidComponent = () => {
   useEffect(() => {
     getWeatherData();
   }, []);
-  console.log(data)
   return (
     <View>
       <View style={styles.rowContainer}>

@@ -5,13 +5,13 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import styles from "./styles";
 
 const days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
+  "CN",
+  "T2",
+  "T3",
+  "T4",
+  "T5",
+  "T6",
+  "T7",
 ];
 const months = [
   "Jan",
@@ -54,7 +54,7 @@ const TopComponent = () => {
     }, 1000);
   }, []);
 
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(false);
   const [data, setData] = useState([]);
 
   const weather_api_key = "f100dceaffb1eb25f4e83484d09d05d2";
@@ -64,6 +64,7 @@ const TopComponent = () => {
 
   const getWeatherData = async () => {
     try {
+      setLoading(true)
       const response = await fetch(weather_api_url);
       const json = await response.json();
       setData(json.main);
@@ -77,6 +78,7 @@ const TopComponent = () => {
   useEffect(() => {
     getWeatherData();
   }, []);
+
 
   return (
     <View>

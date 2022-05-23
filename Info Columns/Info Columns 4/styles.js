@@ -8,9 +8,9 @@ const styles = StyleSheet.create({
         alignItems:"center"
       },
       image:{
-          marginTop: 31,
-          width:18,
-          height: 18,
+          marginTop: 21,
+          width:30,
+          height: 30,
       },
       time:{
           fontSize: 18,
@@ -29,16 +29,14 @@ const styles = StyleSheet.create({
         fontWeight:"bold",
         color:"white",
         marginTop:86,
-        bottom: 30
+        bottom: 30,
       },
       tempColumn:{
           width:6,
-          height:20,
+          height:30,
           backgroundColor:"white",
           borderRadius:3,
-          bottom: 20
-          
-          
+          bottom: 25,
       }
   
 });
